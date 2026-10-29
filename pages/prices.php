@@ -1,0 +1,4 @@
+<section class="page-hero"><div class="container"><span class="eyebrow"><?= e($t['prices_eyebrow']) ?></span><h1><?= e($t['nav_prices']) ?> <span><?= e($t['page_hero_accent']) ?></span></h1><p><?= e($t['prices_intro']) ?></p></div></section>
+<section class="section section-light"><div class="container"><div class="pricing-table-wrap"><table class="pricing-table"><thead><tr><th><?= e($t['price_service']) ?></th><th><?= e($t['price_unit']) ?></th><th><?= e($t['price_cost']) ?></th></tr></thead><tbody>
+<?php foreach ($t['prices'] as $price): ?><tr><td><strong><?= e($price['service']) ?></strong></td><td><?= e($price['unit']) ?></td><td class="price-value"><?= e($price['cost']) ?></td></tr><?php endforeach; ?>
+</tbody></table></div><div class="price-notice"><span class="notice-icon">i</span><p><strong><?= e($t['price_notice_title']) ?></strong><br><?= e($t['price_notice_text']) ?></p></div><p class="demo-note"><?= e($t['demo_prices']) ?></p></div></section>
